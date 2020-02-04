@@ -5,36 +5,34 @@ import org.junit.jupiter.api.Test;
 
 public class AppTest {
 
-    PalindromeChecker palindromeChecker = new PalindromeChecker();
-
     @Test
     public void testThatGivenNumberIsAPalindrome() {
-        Assertions.assertTrue(true, palindromeChecker.palindromeChecker(121) + " is a palindrome");
+        Assertions.assertTrue(true, PalindromeChecker.palindromeChecker(121) + " is a palindrome");
     }
 
     @Test
     public void testThatGivenNumberIsNotAPalindrome() {
-        Assertions.assertTrue(true, palindromeChecker.palindromeChecker(120) + " is not a Palindrome");
+        Assertions.assertTrue(true, PalindromeChecker.palindromeChecker(120) + " is not a Palindrome");
     }
 
     @Test
     public void testThatOneDigitNumberIsAPalindrome() {
-        Assertions.assertTrue(true, palindromeChecker.palindromeChecker(0) + " is a Palindrome");
+        Assertions.assertTrue(true, PalindromeChecker.palindromeChecker(0) + " is a Palindrome");
     }
 
     @Test
-    public void testThatGivenNegativeNumberIsAPalindrome() {
-        Assertions.assertTrue(true, palindromeChecker.palindromeChecker(-121) + " is a palindrome");
+    public void testThatAGivenNegativeNumberIsAPalindrome() {
+        Assertions.assertTrue(true, PalindromeChecker.palindromeChecker(-121) + " is a palindrome");
     }
 
     @Test
-    public void testThatGivenNegativeNumberIsNotAPalindrome() {
-        Assertions.assertTrue(true, palindromeChecker.palindromeChecker(-120) + " is not a Palindrome");
+    public void testThatAGivenNegativeNumberIsNotAPalindrome() {
+        Assertions.assertTrue(true, PalindromeChecker.palindromeChecker(-120) + " is not a Palindrome");
     }
 
     @Test
     public void testThatPalindromeCheckerIsNotNull() {
-        Assertions.assertNotNull(palindromeChecker);
+        Assertions.assertNotNull(PalindromeChecker.palindromeChecker(0));
     }
 
 }
